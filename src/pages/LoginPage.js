@@ -36,7 +36,7 @@ const Login = () => {
       <div className="login-form">
         <div className='judul'>
         <div className='j'>
-            <j>Welcome</j>
+            <j>TOSERBA</j>
         </div>
         <div className='l'>
             <l>Please sign in</l>
