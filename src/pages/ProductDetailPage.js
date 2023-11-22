@@ -37,6 +37,7 @@ const ProductDetailPage = () => {
       ) : (
         <p>Loading...</p>
       )}
+      
     </div>
   );
 };

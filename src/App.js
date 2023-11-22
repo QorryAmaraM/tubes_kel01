@@ -13,6 +13,7 @@ import { FaQuestionCircle, FaHome, FaUser } from "react-icons/fa"
 import { RiEmotionLaughFill } from "react-icons/ri"
 import { AuthContext } from "./context/AuthContext";
 import { AuthProvider, useAuth } from './context/AuthContext';
+import 'typeface-roboto';
 import "./App.css";
 
 
