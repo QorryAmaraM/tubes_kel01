@@ -9,7 +9,7 @@ import AboutPage from "./pages/AboutPage";
 import { NavLink } from 'react-router-dom';
 import { AiFillAlert, AiFillAmazonCircle, AiFillCar } from "react-icons/ai";
 import { BsFillPersonFill } from "react-icons/bs";
-import { FaHome } from "react-icons/fa"
+import { FaQuestionCircle, FaHome, FaUser } from "react-icons/fa"
 import { RiEmotionLaughFill } from "react-icons/ri"
 import { AuthContext } from "./context/AuthContext";
 import { AuthProvider, useAuth } from './context/AuthContext';
@@ -40,11 +40,11 @@ function AppContent() {
           Home Page
         </NavLink>
         <NavLink to="/profile" className="iconWrapper">
-          <FaHome className="icon" />
+          <FaUser className="icon" />
           Profile
         </NavLink>
         <NavLink to="/about" className="iconWrapper">
-          <FaHome className="icon" />
+          <FaQuestionCircle className="icon" />
           About
         </NavLink>
       </header>

@@ -11,7 +11,7 @@ const ProfilePage = ({ username }) => {
       </div>
       <div className="profile-content">
         <p>Welcome, {username}!</p>
-        <p>This is your profile page. You can customize it as needed.</p>
+        <p>Dapatkan berbagai macam kebutuhan di TOSERBA (Toko Serba Ada) Online Ini!.</p>
       </div>
     </div>
   );

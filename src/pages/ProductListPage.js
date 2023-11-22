@@ -6,7 +6,7 @@ import "../pages/ProductListPage.css";
 const ProductList = () => {
   const [products, setProducts] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
-  const [productsPerPage] = useState(5);
+  const [productsPerPage] = useState(8);
 
   useEffect(() => {
     const fetchData = async () => {

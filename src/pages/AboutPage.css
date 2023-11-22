@@ -1,46 +1,50 @@
 /* AboutPage.css */
 
 .about-container {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .about-header {
-    background-color: #3498db;
-    color: white;
-    padding: 20px;
-    text-align: center;
-    border-radius: 8px 8px 0 0;
-  }
-  
-  .about-content {
-    margin-top: 20px;
-  }
-  
-  .about-content a {
-    text-decoration: none;
-    color: #3498db;
-  }
-  
-  .logout-button {
-    background-color: #e74c3c;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-    margin-top: 20px;
-  }
-  
-  .logout-button:hover {
-    background-color: #c0392b;
-  }
-  
-  /* Add more styles as needed */
-  
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-header {
+  background-color: #2980b9;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px 10px 0 0;
+}
+
+.about-content {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.about-content a {
+  text-decoration: none;
+  color: #2980b9;
+  transition: color 0.3s ease-in-out;
+}
+
+.about-content a:hover {
+  color: #1a5276;
+}
+
+.logout-button {
+  background-color: #e74c3c;
+  color: white;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.logout-button:hover {
+  background-color: #c0392b;
+}

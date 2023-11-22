@@ -7,16 +7,23 @@ body {
 }
 
 header {
-  background-color: #333;
+  background-color: #a1a60d;
   color: white;
   padding: 10px;
   text-align: center;
   position: fixed;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-around; 
+  align-items: center;
   top: 0;
   width: 100%;
 }
+
+/* Adjust the space between items */
+header > * {
+  margin: 0 5px; /* Change this value to adjust the spacing between icons */
+}
+
 
 /* Updated styles for positioning side by side */
 @media (min-width: 768px) {
