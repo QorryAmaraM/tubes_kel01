@@ -7,6 +7,7 @@ const ProductList = () => {
   const [products, setProducts] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const [productsPerPage] = useState(8);
+  const [searchTerm, setSearchTerm] = useState('');
 
   useEffect(() => {
     const fetchData = async () => {
@@ -26,13 +27,33 @@ const ProductList = () => {
 
   const indexOfLastProduct = currentPage * productsPerPage;
   const indexOfFirstProduct = indexOfLastProduct - productsPerPage;
-  const currentProducts = products.slice(indexOfFirstProduct, indexOfLastProduct);
+
+  // Filter products based on search term
+  const filteredProducts = products.filter(product =>
+    product.title.toLowerCase().includes(searchTerm.toLowerCase())
+  );
+
+  const currentProducts = filteredProducts.slice(indexOfFirstProduct, indexOfLastProduct);
+
+  
 
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
+
+  const handleSearch = (event) => {
+    setSearchTerm(event.target.value);
+    setCurrentPage(1); // Reset to the first page when the search term changes
+  };
 
   return (
     <div className='product-list-container'>
       <h1 className='product-list-header'>Product List</h1>
+      <input
+        type="text"
+        placeholder="Search products..."
+        value={searchTerm}
+        onChange={handleSearch}
+        className='search-bar'
+      />
       <ul className='product-list'>
         {currentProducts.map((product) => (
           <li key={product.id} className='product-item'>

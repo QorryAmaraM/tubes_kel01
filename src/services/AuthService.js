@@ -1,6 +1,6 @@
 class AuthService {
     isAuthenticated() {
-      // Implementasi pengecekan autentikasi sederhana
+      
       return localStorage.getItem('authenticated') === 'true';
     }
   
