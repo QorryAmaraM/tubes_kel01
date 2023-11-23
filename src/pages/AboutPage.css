@@ -1,7 +1,7 @@
 /* AboutPage.css */
 
 .about-container {
-  max-width: 800px;
+  max-width: 1200px;
   margin: 20px auto;
   padding: 20px;
   background-color: #f7f7f7;
@@ -11,11 +11,11 @@
 }
 
 .about-header {
-  background-color: #2980b9;
+  background-color: #333; /* Darkened header background */
   color: white;
   padding: 20px;
   text-align: center;
-  border-radius: 10px 10px 0 0;
+  border-radius: 8px 8px 0 0;
 }
 
 .about-content {

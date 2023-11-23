@@ -21,7 +21,7 @@ const AboutPage = () => {
       <p className='about-content'>Salsha Nabilla Putri - 21120120140173</p>
       <p className='about-content'>Muhamad Rafdan Maulana - 21120120140139</p>
       <p className='about-content'>
-        <Link to="/">Go to Home</Link>
+        <Link to="/products">Go to Home</Link>
       </p>
       <button onClick={handleLogout} className='logout-button' >
         Logout
